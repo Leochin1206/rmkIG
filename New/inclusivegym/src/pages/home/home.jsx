@@ -6,6 +6,10 @@ import anaBrito from "../../images/CARROSSEL ANA BRITO.jpeg";
 import guilhermeMaia from "../../images/CARROSSEL GUILHERME.jpeg"
 import wendellBelarmino from "../../images/CARROSSEL WENDELL.jpeg"
 import backgroundImage from "../../images/apresentacao.jpg"
+import panobiancoLogo from "../../images/panobiancoLogo.png"
+import skyfitLogo from "../../images/skyfitLogo.png"
+import smartfitLogo from "../../images/smartfitLogo.png"
+import logo from "../../images/logo.png"
 
 import "./home.css";
 
@@ -63,6 +67,24 @@ export default function Home() {
                     linkInstagram="https://www.instagram.com/wendell_belarmino/?hl=br"
                     nameInstagram="@wendell_belarmino"
                 />
+            </div>
+            <div className="gyms">
+                <div className="gym">
+                    <h3>Panobianco</h3>
+                    <img src={panobiancoLogo} alt="panobianco Logo"/>
+                </div>
+                <div className="gym">
+                    <h3>Sky Fit</h3>
+                    <img src={skyfitLogo} alt="skyfit Logo"/>
+                </div>
+                <div className="gym">
+                    <h3>Smart Fit</h3>
+                    <img src={smartfitLogo} alt="smartfit Logo" className="smartfitLogo"/> 
+                </div>
+                <div className="gym">
+                    <h3>Outras Opções</h3>
+                    <img src={logo} alt="outras opções Logo" className="otheroptionsLogo"/>
+                </div>
             </div>
         </>
     );

@@ -87,3 +87,27 @@
     flex-wrap: wrap;
     margin-top: -10%;
 }
+
+.gyms{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 2% 0 2% 0;
+}
+
+.gym{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+.gym h3{
+    font-size: 25px;
+    margin-bottom: 2%;
+}
+
+.gym img{
+    width: 37%;
+}
