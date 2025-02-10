@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import { InstagramLogo, Star } from "@phosphor-icons/react";
+import { Star } from "@phosphor-icons/react";
 
 import "./athleteCard.css";
 
@@ -20,12 +20,16 @@ export function AthleteCard({ name, image, description, achievement1, achievemen
         <>
             <div className="cardAthlete">
                 <h1>{name}</h1>
-                <img src={image} alt="Imagem do atleta" className="imgAthlete"/>
+                <div className="imgAchievementes">
+                    <img src={image} alt="Imagem do atleta" className="imgAthlete"/>
+                    <div className="descAchievements">
+                        <div className="mainAchievements"><h2>Principais Conquistas</h2></div>
+                        <div className="achievements"><p><Star size={15} color="#fff" /> {achievement1}</p></div>
+                        <div className="achievements"><p><Star size={15} color="#fff" /> {achievement2}</p></div>
+                        <div className="achievements"><p><Star size={15} color="#fff" /> {achievement3}</p></div>
+                    </div>
+                </div>
                 <div className="containerDescription"><p>{description}</p></div>
-                <div className="mainAchievements"><h2>Principais Conquistas</h2></div>
-                <div className="achievements"><p><Star size={15} color="#fff" /> {achievement1}</p></div>
-                <div className="achievements"><p><Star size={15} color="#fff" /> {achievement2}</p></div>
-                <div className="achievements"><p><Star size={15} color="#fff" /> {achievement3}</p></div>
                 <div className="instagram"><Link to={linkInstagram}>{nameInstagram}</Link></div>
             </div>
         </>

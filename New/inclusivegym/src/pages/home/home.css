@@ -40,7 +40,7 @@
     padding: 20px;
     width: 80%;
     border-radius: 10px;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .overlay h1 {
@@ -80,9 +80,10 @@
     background-color: var(--whaterGreen-color);
 }
 
-.athleteCards{
+.cads{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -130px;
+    flex-wrap: wrap;
+    margin-top: -10%;
 }

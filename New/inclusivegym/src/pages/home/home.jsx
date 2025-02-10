@@ -12,34 +12,34 @@ import "./home.css";
 export default function Home() {
     return (
         <>
-        <div className="mainContainer">
-            <div className="overlay">
-                <h1>Bem-vindo ao Inclusive Gym</h1>
-                <p>O Inclusive Gym, representa um esforço tecnológico notável na busca pela igualdade 
-                de oportunidades no esporte, projetado para pessoas com deficiência visual.</p>
-                <div className="buttonsOverlay">
-                    <Link to="/aboutUs"><p>Sobre Nós</p></Link>
+            <div className="mainContainer">
+                <div className="overlay">
+                    <h1>Bem-vindo ao Inclusive Gym</h1>
+                    <p>O Inclusive Gym, representa um esforço tecnológico notável na busca pela igualdade
+                        de oportunidades no esporte, projetado para pessoas com deficiência visual.</p>
+                    <div className="buttonsOverlay">
+                        <Link to="/aboutUs"><p>Sobre Nós</p></Link>
+                    </div>
                 </div>
+                <img src={backgroundImage} alt="Background Image" className="backgroundImage" />
             </div>
-            <img src={backgroundImage} alt="Background Image" className="backgroundImage" />
-        </div>
-        <div className="athleteCards">
-                <AthleteCard 
+            <div className="cads">
+                <AthleteCard
                     name="Ana Brito"
-                    image={anaBrito} 
-                    description="Tem baixa visão por albinismo. No Rio de Janeiro, descobriu 
-                    o goalball na Educação Física do Instituto Benjamin Constant e passou a 
-                    treinar em alto nível em 2014. Foi convocada para a Seleção pela primeira 
-                    vez em 2016."
+                    image={anaBrito}
+                    description="Tem baixa visão devido ao albinismo. Radicada do Rio de Janeiro, conheceu o 
+                    goalball na Educação Física no Instituto Benjamin Constant e começou a praticar a modalidade 
+                    em alto rendimento em 2014. Primeira convocação para a Seleção em 2016."
                     achievement1="Ouro no Campeonato das Américas 2022"
                     achievement2="Ouro nos Jogos Parapan-Americanos Lima 2019"
                     achievement3="Bronze no Mundial de Goalball Malmö 2018"
                     linkInstagram="https://www.instagram.com/anagabrielybrito/?hl=br"
                     nameInstagram="@anagabrielybrito"
                 />
-                <AthleteCard 
+
+                <AthleteCard
                     name="Guilherme Maia"
-                    image={guilhermeMaia} 
+                    image={guilhermeMaia}
                     description="Guilherme Maia tem deficiência auditiva bilateral profunda. 
                     Estudou em escolas de ouvintes e especializadas, superando desafios na 
                     comunicação e no aprendizado para desenvolver suas habilidades."
@@ -49,9 +49,10 @@ export default function Home() {
                     linkInstagram="https://www.instagram.com/guimaia89/?hl=br"
                     nameInstagram="@guimaia89"
                 />
-                <AthleteCard 
+
+                <AthleteCard
                     name="Wendell Belarmino"
-                    image={wendellBelarmino} 
+                    image={wendellBelarmino}
                     description="Wendell, atleta de natação, tem glaucoma congênito e passou 
                     por dez transplantes de córnea. A perda de visão foi gradativa, e em 2019 
                     foi reclassificado da classe S12 para S11, pois já possuía apenas 3% de 
