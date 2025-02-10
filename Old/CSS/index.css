@@ -1,0 +1,3575 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background: #e1e5f2;
+}
+
+/* NAVBAR */
+nav {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background-color: #84ADAF;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+
+img.logo {
+  height: 60px;
+  width: auto;
+  margin-left: -80px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #043A57;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 8px 15px;
+  border-radius: 13px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  font-family: Abel, sans-serif;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  background-color: #043A57;
+  color: #84ADAF;
+}
+
+nav ul li a.active {
+  background-color: #043A57;
+  color: #E6E6E6;
+}
+
+nav ul li a.active:hover {
+  background-color: #84ADAF;
+  color: #043A57;
+  border-style: solid;
+}
+
+nav .menu-btn i {
+  color: #043A57;
+  cursor: pointer;
+  display: none;
+}
+
+
+.apresentacao-conteiner {
+  display: flex; /* Usar flexbox para alinhar os elementos filhos em coluna */
+  flex-direction: column; /* Alinhar os elementos verticalmente em coluna */
+  align-items: center; /* Alinhar horizontalmente ao centro */
+  margin-top: -20px; /* Margem superior negativa para mover o conteúdo para cima */
+}
+
+.apresentacao {
+  text-align: center; /* Centralizar o conteúdo de texto */
+  padding: 35px; /* Adicionar algum espaçamento interno opcional */
+  margin-top: -350px;
+}
+
+.apresentacao h1,
+.apresentacao p,
+.apresentacao button {
+  margin: 10px; /* Adicionar margens entre os elementos internos */
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Poppins, sans-serif;
+  text-align: center;
+}
+
+.saiba {
+  background-color: #E6E6E6; /* Cor de fundo */
+  color: #043A57; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+  border: none; /* Remover borda */
+  border-radius: 15px; /* Cantos arredondados */
+  cursor: pointer; /* Alterar cursor ao passar o mouse */
+  font-size: 16px; /* Tamanho da fonte */
+  text-transform: uppercase; /* Texto em maiúsculas */
+}
+
+.saiba:hover {
+  background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+  border-color: #043A57;
+}
+
+.saiba a{
+  text-decoration: none;
+  color: #043A57;
+}
+
+.entrar {
+  background-color: #E6E6E6; /* Cor de fundo */
+  color: #043A57; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+  border: none; /* Remover borda */
+  border-radius: 15px; /* Cantos arredondados */
+  cursor: pointer; /* Alterar cursor ao passar o mouse */
+  font-size: 16px; /* Tamanho da fonte */
+  text-transform: uppercase; /* Texto em maiúsculas */
+}
+
+.entrar:hover {
+  background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+  border-color: #043A57;
+}
+
+.entrar a{
+  text-decoration: none;
+  color: #043A57;
+}
+
+.apresentacao-conteiner img{
+  width: 100%;
+  height: 100%;
+}
+
+.atletas{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #e1e5f2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: 8%;
+}
+
+.card {
+  width: 30%;
+  height: 91%;
+  background-color: #043A57;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinhar a imagem na parte superior verticalmente */
+  align-items: center; /* Alinhar a imagem no centro horizontalmente */
+  position: relative;
+  border-radius: 30px;
+  margin: 1%;
+  margin-top: -115px;
+}
+
+.card-content {
+  flex-grow: 1; /* Faz com que o conteúdo do cartão ocupe o espaço restante na vertical */
+}
+
+.card img {
+  margin-top: 5%;
+  border-radius: 20px;
+  max-width: 90%;
+  height: auto;
+}
+
+h3{
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: #bfdbf7;
+  margin-top: 5%;
+}
+
+p{
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: #bfdbf7;
+  text-align: justify;
+  font-size: 15px;
+  margin: 4%;
+}
+
+.instagram{
+  margin-top: 3%;
+  display: inline-flex;
+}
+
+.instagram-2{
+  margin-top: 16%;
+  display: inline-flex;
+}
+
+.instagram-3{
+  margin-top: 0%;
+  display: inline-flex;
+}
+
+.sobre{
+  background: #e1e5f2;
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; 
+  position: relative;
+}
+
+.sobre img{
+  width: auto;
+  height: 20%;
+  margin-top: 2%;
+}
+
+.sobre p{
+  color: #043A57;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+}
+
+.sobre a{
+  color: #043A57;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  text-align: center;
+  margin-top: -30px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.sobre a:hover{
+  color: #84ADAF;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  text-align: center;
+  margin-top: -30px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+
+
+@media (max-width: 975px) {
+  img.logo {
+    height: 60px;
+    width: auto;
+    margin-left: -80px;
+  }
+  nav .menu-btn i {
+    display: block;
+  }
+  nav ul {
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background-color: #84ADAF;
+    height: 100vh;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  nav ul.open {
+    left: 0;
+  }
+  nav ul li {
+    width: 100%;
+    margin: 50px;
+  }
+  nav ul li a {
+    font-size: 23px;
+  }
+  nav ul li a.active {
+    background-color: #043A57;
+    color: #E6E6E6;
+  }
+  nav ul li a.active:hover {
+    background-color: #84ADAF;
+    color: #043A57;
+    border-style: solid;
+  }
+}
+
+@media (max-width: 930px) {
+  img.logo {
+    height: 60px;
+    width: auto;
+    margin-left: -80px;
+  }
+  nav .menu-btn i {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background-color: #84ADAF;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  nav ul.open {
+    left: 0;
+  }
+  nav ul li {
+    width: 100%;
+    margin: 50px;
+  }
+  nav ul li a {
+    font-size: 23px;
+  }
+  nav ul li a.active {
+    background-color: #043A57;
+    color: #E6E6E6;
+  }
+  nav ul li a.active:hover {
+    background-color: #84ADAF;
+    color: #043A57;
+    border-style: solid;
+  }
+}
+
+
+
+@media (max-width: 1210px) and (min-width: 1100px){
+  .apresentacao-conteiner {
+    display: flex; /* Usar flexbox para alinhar os elementos filhos em coluna */
+    flex-direction: column; /* Alinhar os elementos verticalmente em coluna */
+    align-items: center; /* Alinhar horizontalmente ao centro */
+    margin-top: -20px; /* Margem superior negativa para mover o conteúdo para cima */
+  }
+  
+  .apresentacao {
+    text-align: center; /* Centralizar o conteúdo de texto */
+    padding: 35px; /* Adicionar algum espaçamento interno opcional */
+    margin-top: -350px;
+  }
+  
+  .apresentacao h1,
+  .apresentacao p,
+  .apresentacao button {
+    margin: 10px; /* Adicionar margens entre os elementos internos */
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+  }
+  
+  .saiba {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .saiba:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .saiba a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .entrar {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .entrar:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .entrar a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .apresentacao-conteiner img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .atletas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #e1e5f2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 8%;
+  }
+  
+  .card {
+    flex:1 ;
+    width: 30%;
+    height: 92%;
+    background-color: #043A57;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinhar a imagem na parte superior verticalmente */
+    align-items: center; /* Alinhar a imagem no centro horizontalmente */
+    position: relative;
+    border-radius: 30px;
+    margin: 1%;
+    margin-top: -115px;
+  }
+  
+  .card-content {
+    flex-grow: 1; /* Faz com que o conteúdo do cartão ocupe o espaço restante na vertical */
+  }
+  
+  .card img {
+    margin-top: 5%;
+    border-radius: 20px;
+    max-width: 90%;
+    height: auto;
+  }
+  
+  h3{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    margin-top: 5%;
+  }
+  
+  p{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    text-align: justify;
+    font-size: 15px;
+    margin: 4%;
+  }
+  
+  .instagram{
+    margin-top: 3%;
+    display: inline-flex;
+  }
+  
+  .instagram-2{
+    margin-top: 16%;
+    display: inline-flex;
+  }
+  
+  .instagram-3{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .sobre{
+    background: #e1e5f2;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    position: relative;
+  }
+  
+  .sobre img{
+    width: auto;
+    height: 20%;
+    margin-top: 2%;
+  }
+  
+  .sobre p{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .sobre a{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .sobre a:hover{
+    color: #84ADAF;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+@media (max-width: 1099px) and (min-width: 1000px){
+  .apresentacao-conteiner {
+    display: flex; /* Usar flexbox para alinhar os elementos filhos em coluna */
+    flex-direction: column; /* Alinhar os elementos verticalmente em coluna */
+    align-items: center; /* Alinhar horizontalmente ao centro */
+    margin-top: -20px; /* Margem superior negativa para mover o conteúdo para cima */
+  }
+  
+  .apresentacao {
+    text-align: center; /* Centralizar o conteúdo de texto */
+    padding: 35px; /* Adicionar algum espaçamento interno opcional */
+    margin-top: -310px;
+  }
+  
+  .apresentacao h1,
+  .apresentacao p,
+  .apresentacao button {
+    margin: 10px; /* Adicionar margens entre os elementos internos */
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+  }
+  
+  .saiba {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .saiba:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .saiba a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .entrar {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .entrar:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .entrar a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .apresentacao-conteiner img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .atletas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #e1e5f2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 8%;
+  }
+  
+  .card {
+    width: 30%;
+    height: 96%;
+    background-color: #043A57;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinhar a imagem na parte superior verticalmente */
+    align-items: center; /* Alinhar a imagem no centro horizontalmente */
+    position: relative;
+    border-radius: 30px;
+    margin: 1%;
+    margin-top: -115px;
+  }
+  
+  .card-content {
+    flex-grow: 1; /* Faz com que o conteúdo do cartão ocupe o espaço restante na vertical */
+  }
+  
+  .card img {
+    margin-top: 5%;
+    border-radius: 20px;
+    max-width: 90%;
+    height: auto;
+  }
+  
+  h3{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    margin-top: 5%;
+  }
+  
+  p{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    text-align: justify;
+    font-size: 15px;
+    margin: 4%;
+  }
+  
+  .instagram{
+    margin-top: 3%;
+    display: inline-flex;
+  }
+  
+  .instagram-2{
+    margin-top: 16%;
+    display: inline-flex;
+  }
+  
+  .instagram-3{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .sobre{
+    background: #e1e5f2;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    position: relative;
+  }
+  
+  .sobre img{
+    width: auto;
+    height: 20%;
+    margin-top: 2%;
+  }
+  
+  .sobre p{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .sobre a{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .sobre a:hover{
+    color: #84ADAF;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 900px){
+  .apresentacao-conteiner {
+    display: flex; /* Usar flexbox para alinhar os elementos filhos em coluna */
+    flex-direction: column; /* Alinhar os elementos verticalmente em coluna */
+    align-items: center; /* Alinhar horizontalmente ao centro */
+    margin-top: -20px; /* Margem superior negativa para mover o conteúdo para cima */
+  }
+  
+  .apresentacao {
+    text-align: center; /* Centralizar o conteúdo de texto */
+    padding: 35px; /* Adicionar algum espaçamento interno opcional */
+    margin-top: -290px;
+  }
+  
+  .apresentacao h1,
+  .apresentacao p,
+  .apresentacao button {
+    margin: 10px; /* Adicionar margens entre os elementos internos */
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+  }
+  
+  .saiba {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .saiba:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .saiba a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .entrar {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .entrar:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .entrar a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .apresentacao-conteiner img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .atletas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #e1e5f2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 8%;
+  }
+  
+  .card {
+    width: 30%;
+    height: 85%;
+    background-color: #043A57;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinhar a imagem na parte superior verticalmente */
+    align-items: center; /* Alinhar a imagem no centro horizontalmente */
+    position: relative;
+    border-radius: 30px;
+    margin: 1%;
+    margin-top: -90px;
+  }
+  
+  .card-content {
+    flex-grow: 1; /* Faz com que o conteúdo do cartão ocupe o espaço restante na vertical */
+  }
+  
+  .card img {
+    margin-top: 5%;
+    border-radius: 20px;
+    max-width: 90%;
+    height: auto;
+  }
+  
+  h3{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    margin-top: 5%;
+  }
+  
+  p{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    text-align: justify;
+    font-size: 13.5px;
+    margin: 4%;
+  }
+  
+  .instagram{
+    margin-top: 3%;
+    display: inline-flex;
+  }
+  
+  .instagram-2{
+    margin-top: 16%;
+    display: inline-flex;
+  }
+  
+  .instagram-3{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .sobre{
+    background: #e1e5f2;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    position: relative;
+  }
+  
+  .sobre img{
+    width: auto;
+    height: 20%;
+    margin-top: 2%;
+  }
+  
+  .sobre p{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .sobre a{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .sobre a:hover{
+    color: #84ADAF;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+@media (max-width: 900px) and (min-width: 851px){
+  .apresentacao-conteiner {
+    display: flex; /* Usar flexbox para alinhar os elementos filhos em coluna */
+    flex-direction: column; /* Alinhar os elementos verticalmente em coluna */
+    align-items: center; /* Alinhar horizontalmente ao centro */
+    margin-top: -20px; /* Margem superior negativa para mover o conteúdo para cima */
+  }
+  
+  .apresentacao {
+    text-align: center; /* Centralizar o conteúdo de texto */
+    padding: 35px; /* Adicionar algum espaçamento interno opcional */
+    margin-top: -240px;
+  }
+  
+  .apresentacao h1,
+  .apresentacao p,
+  .apresentacao button {
+    margin: 10px; /* Adicionar margens entre os elementos internos */
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+  }
+  
+  .saiba {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .saiba:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .saiba a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .entrar {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .entrar:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .entrar a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .apresentacao-conteiner img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .atletas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #e1e5f2;
+    position: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 74%;
+  }
+  
+  .card {
+    width: 90%;
+    height: 100%;
+    background-color: #043A57;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinhar a imagem na parte superior verticalmente */
+    align-items: center; /* Alinhar a imagem no centro horizontalmente */
+    position: center;
+    border-radius: 30px;
+    margin: 5%;
+    margin-top: 5px;
+  }
+  
+  .card-content {
+    flex-grow: 1; /* Faz com que o conteúdo do cartão ocupe o espaço restante na vertical */
+  }
+  
+  .card img {
+    margin-top: 5%;
+    border-radius: 20px;
+    max-width: 90%;
+    height: auto;
+  }
+  
+  h3{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    margin-top: 5%;
+  }
+  
+  p{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    text-align: justify;
+    font-size: 12px;
+    margin: 4%;
+  }
+  
+  .instagram{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .instagram-2{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .instagram-3{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .sobre{
+    background: #e1e5f2;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    position: relative;
+  }
+  
+  .sobre img{
+    width: auto;
+    height: 20%;
+    margin-top: 2%;
+  }
+  
+  .sobre p{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .sobre a{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .sobre a:hover{
+    color: #84ADAF;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 850px) and (min-width: 800px){
+  .apresentacao-conteiner {
+    display: flex; /* Usar flexbox para alinhar os elementos filhos em coluna */
+    flex-direction: column; /* Alinhar os elementos verticalmente em coluna */
+    align-items: center; /* Alinhar horizontalmente ao centro */
+    margin-top: -20px; /* Margem superior negativa para mover o conteúdo para cima */
+  }
+  
+  .apresentacao {
+    text-align: center; /* Centralizar o conteúdo de texto */
+    padding: 35px; /* Adicionar algum espaçamento interno opcional */
+    margin-top: -240px;
+  }
+  
+  .apresentacao h1,
+  .apresentacao p,
+  .apresentacao button {
+    margin: 10px; /* Adicionar margens entre os elementos internos */
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+  }
+  
+  .saiba {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .saiba:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .saiba a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .entrar {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .entrar:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .entrar a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .apresentacao-conteiner img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .atletas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #e1e5f2;
+    position: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 72%;
+  }
+  
+  .card {
+    width: 90%;
+    height: 95%;
+    background-color: #043A57;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinhar a imagem na parte superior verticalmente */
+    align-items: center; /* Alinhar a imagem no centro horizontalmente */
+    position: center;
+    border-radius: 30px;
+    margin: 5%;
+    margin-top: 10px;
+  }
+  
+  .card-content {
+    flex-grow: 1; /* Faz com que o conteúdo do cartão ocupe o espaço restante na vertical */
+  }
+  
+  .card img {
+    margin-top: 5%;
+    border-radius: 20px;
+    max-width: 90%;
+    height: auto;
+  }
+  
+  h3{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    margin-top: 5%;
+  }
+  
+  p{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    text-align: justify;
+    font-size: 12px;
+    margin: 4%;
+  }
+  
+  .instagram{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .instagram-2{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .instagram-3{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .sobre{
+    background: #e1e5f2;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    position: relative;
+  }
+  
+  .sobre img{
+    width: auto;
+    height: 20%;
+    margin-top: 2%;
+  }
+  
+  .sobre p{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .sobre a{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .sobre a:hover{
+    color: #84ADAF;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 750px){
+  .apresentacao-conteiner {
+    display: flex; /* Usar flexbox para alinhar os elementos filhos em coluna */
+    flex-direction: column; /* Alinhar os elementos verticalmente em coluna */
+    align-items: center; /* Alinhar horizontalmente ao centro */
+    margin-top: -20px; /* Margem superior negativa para mover o conteúdo para cima */
+  }
+  
+  .apresentacao {
+    text-align: center; /* Centralizar o conteúdo de texto */
+    padding: 35px; /* Adicionar algum espaçamento interno opcional */
+    margin-top: -240px;
+  }
+  
+  .apresentacao h1,
+  .apresentacao p,
+  .apresentacao button {
+    margin: 10px; /* Adicionar margens entre os elementos internos */
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+  }
+  
+  .saiba {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .saiba:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .saiba a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .entrar {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .entrar:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .entrar a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .apresentacao-conteiner img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .atletas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #e1e5f2;
+    position: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 70%;
+  }
+  
+  .card {
+    width: 90%;
+    height: 88%;
+    background-color: #043A57;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinhar a imagem na parte superior verticalmente */
+    align-items: center; /* Alinhar a imagem no centro horizontalmente */
+    position: center;
+    border-radius: 30px;
+    margin: 5%;
+    margin-top: 10px;
+  }
+  
+  .card-content {
+    flex-grow: 1; /* Faz com que o conteúdo do cartão ocupe o espaço restante na vertical */
+  }
+  
+  .card img {
+    margin-top: 5%;
+    border-radius: 20px;
+    max-width: 90%;
+    height: auto;
+  }
+  
+  h3{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    margin-top: 5%;
+  }
+  
+  p{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    text-align: justify;
+    font-size: 12px;
+    margin: 4%;
+  }
+  
+  .instagram{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .instagram-2{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .instagram-3{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .sobre{
+    background: #e1e5f2;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    position: relative;
+  }
+  
+  .sobre img{
+    width: auto;
+    height: 20%;
+    margin-top: 2%;
+  }
+  
+  .sobre p{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .sobre a{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .sobre a:hover{
+    color: #84ADAF;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 750px) and (min-width: 700px){
+  .apresentacao-conteiner {
+    display: flex; /* Usar flexbox para alinhar os elementos filhos em coluna */
+    flex-direction: column; /* Alinhar os elementos verticalmente em coluna */
+    align-items: center; /* Alinhar horizontalmente ao centro */
+    margin-top: -20px; /* Margem superior negativa para mover o conteúdo para cima */
+  }
+  
+  .apresentacao {
+    text-align: center; /* Centralizar o conteúdo de texto */
+    padding: 35px; /* Adicionar algum espaçamento interno opcional */
+    margin-top: -230px;
+  }
+  
+  .apresentacao h1,
+  .apresentacao p,
+  .apresentacao button {
+    margin: 5px; /* Adicionar margens entre os elementos internos */
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+  }
+  
+  .saiba {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 15px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .saiba:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .saiba a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .entrar {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .entrar:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .entrar a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .apresentacao-conteiner img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .atletas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #e1e5f2;
+    position: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 73%;
+  }
+  
+  .card {
+    width: 90%;
+    height: 85%;
+    background-color: #043A57;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinhar a imagem na parte superior verticalmente */
+    align-items: center; /* Alinhar a imagem no centro horizontalmente */
+    position: center;
+    border-radius: 30px;
+    margin: 5%;
+    margin-top: 10px;
+  }
+  
+  
+  .card-content {
+    flex-grow: 1; /* Faz com que o conteúdo do cartão ocupe o espaço restante na vertical */
+  }
+  
+  .card img {
+    margin-top: 5%;
+    border-radius: 20px;
+    max-width: 90%;
+    height: auto;
+  }
+  
+  h3{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    margin-top: 5%;
+  }
+  
+  p{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    text-align: justify;
+    font-size: 12px;
+    margin: 4%;
+  }
+  
+  .instagram{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .instagram-2{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .instagram-3{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .sobre{
+    background: #e1e5f2;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    position: relative;
+  }
+  
+  .sobre img{
+    width: auto;
+    height: 20%;
+    margin-top: 2%;
+  }
+  
+  .sobre p{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .sobre a{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .sobre a:hover{
+    color: #84ADAF;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 700px) and (min-width: 650px){
+  .apresentacao-conteiner {
+    display: flex; /* Usar flexbox para alinhar os elementos filhos em coluna */
+    flex-direction: column; /* Alinhar os elementos verticalmente em coluna */
+    align-items: center; /* Alinhar horizontalmente ao centro */
+    margin-top: -20px; /* Margem superior negativa para mover o conteúdo para cima */
+  }
+  
+  .apresentacao {
+    text-align: center; /* Centralizar o conteúdo de texto */
+    padding: 35px; /* Adicionar algum espaçamento interno opcional */
+    margin-top: -210px;
+  }
+  
+  .apresentacao h1,
+  .apresentacao p,
+  .apresentacao button {
+    margin: 5px; /* Adicionar margens entre os elementos internos */
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+  }
+  
+  .saiba {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 14px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .saiba:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .saiba a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .entrar {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 14px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .entrar:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .entrar a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .apresentacao-conteiner img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .atletas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #e1e5f2;
+    position: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 73%;
+  }
+  
+  .card {
+    width: 90%;
+    height: 85%;
+    background-color: #043A57;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinhar a imagem na parte superior verticalmente */
+    align-items: center; /* Alinhar a imagem no centro horizontalmente */
+    position: center;
+    border-radius: 30px;
+    margin: 5%;
+    margin-top: 10px;
+  }
+  
+  
+  .card-content {
+    flex-grow: 1; /* Faz com que o conteúdo do cartão ocupe o espaço restante na vertical */
+  }
+  
+  .card img {
+    margin-top: 5%;
+    border-radius: 20px;
+    max-width: 90%;
+    height: auto;
+  }
+  
+  h3{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    margin-top: 5%;
+  }
+  
+  p{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    text-align: justify;
+    font-size: 12px;
+    margin: 4%;
+  }
+  
+  .instagram{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .instagram-2{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .instagram-3{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .sobre{
+    background: #e1e5f2;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    position: relative;
+  }
+  
+  .sobre img{
+    width: auto;
+    height: 20%;
+    margin-top: 2%;
+  }
+  
+  .sobre p{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .sobre a{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .sobre a:hover{
+    color: #84ADAF;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 650px) and (min-width: 600px){
+  .apresentacao-conteiner {
+    display: flex; /* Usar flexbox para alinhar os elementos filhos em coluna */
+    flex-direction: column; /* Alinhar os elementos verticalmente em coluna */
+    align-items: center; /* Alinhar horizontalmente ao centro */
+    margin-top: -20px; /* Margem superior negativa para mover o conteúdo para cima */
+  }
+  
+  .apresentacao {
+    text-align: center; /* Centralizar o conteúdo de texto */
+    padding: 35px; /* Adicionar algum espaçamento interno opcional */
+    margin-top: -210px;
+  }
+  
+  .apresentacao h1,
+  .apresentacao p,
+  .apresentacao button {
+    margin: 5px; /* Adicionar margens entre os elementos internos */
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+  }
+  
+  .saiba {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 14px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .saiba:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .saiba a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .entrar {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 14px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .entrar:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .entrar a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .apresentacao-conteiner img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .atletas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #e1e5f2;
+    position: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 76%;
+  }
+  
+  .card {
+    width: 90%;
+    height: 85%;
+    background-color: #043A57;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinhar a imagem na parte superior verticalmente */
+    align-items: center; /* Alinhar a imagem no centro horizontalmente */
+    position: center;
+    border-radius: 30px;
+    margin: 5%;
+    margin-top: 10px;
+  }
+  
+  
+  .card-content {
+    flex-grow: 1; /* Faz com que o conteúdo do cartão ocupe o espaço restante na vertical */
+  }
+  
+  .card img {
+    margin-top: 5%;
+    border-radius: 20px;
+    max-width: 90%;
+    height: auto;
+  }
+  
+  h3{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    margin-top: 5%;
+  }
+  
+  p{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    text-align: justify;
+    font-size: 12px;
+    margin: 4%;
+  }
+  
+  .instagram{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .instagram-2{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .instagram-3{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .sobre{
+    background: #e1e5f2;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    position: relative;
+  }
+  
+  .sobre img{
+    width: auto;
+    height: 20%;
+    margin-top: 2%;
+  }
+  
+  .sobre p{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .sobre a{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .sobre a:hover{
+    color: #84ADAF;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+
+@media (max-width: 600px) and (min-width: 550px){
+  .apresentacao-conteiner {
+    display: flex; /* Usar flexbox para alinhar os elementos filhos em coluna */
+    flex-direction: column; /* Alinhar os elementos verticalmente em coluna */
+    align-items: center; /* Alinhar horizontalmente ao centro */
+    margin-top: -20px; /* Margem superior negativa para mover o conteúdo para cima */
+  }
+  
+  .apresentacao {
+    text-align: center; /* Centralizar o conteúdo de texto */
+    padding: 35px; /* Adicionar algum espaçamento interno opcional */
+    margin-top: -195px;
+  }
+  
+  .apresentacao h1,
+  .apresentacao p,
+  .apresentacao button {
+    margin: 4px; /* Adicionar margens entre os elementos internos */
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+  }
+  
+  .saiba {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 14px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .saiba:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .saiba a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .entrar {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 14px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .entrar:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .entrar a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .apresentacao-conteiner img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .atletas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #e1e5f2;
+    position: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 78%;
+  }
+  
+  .card {
+    width: 90%;
+    height: 85%;
+    background-color: #043A57;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinhar a imagem na parte superior verticalmente */
+    align-items: center; /* Alinhar a imagem no centro horizontalmente */
+    position: center;
+    border-radius: 30px;
+    margin: 5%;
+    margin-top: 10px;
+  }
+  
+  .card-content {
+    flex-grow: 1; /* Faz com que o conteúdo do cartão ocupe o espaço restante na vertical */
+  }
+  
+  .card img {
+    margin-top: 5%;
+    border-radius: 20px;
+    max-width: 90%;
+    height: auto;
+  }
+  
+  h3{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    margin-top: 5%;
+  }
+  
+  p{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    text-align: justify;
+    font-size: 12px;
+    margin: 4%;
+  }
+  
+  .instagram{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .instagram-2{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .instagram-3{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .sobre{
+    background: #e1e5f2;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    position: relative;
+  }
+  
+  .sobre img{
+    width: auto;
+    height: 20%;
+    margin-top: 2%;
+  }
+  
+  .sobre p{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .sobre a{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .sobre a:hover{
+    color: #84ADAF;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 550px) and (min-width: 450px){
+  .apresentacao-conteiner {
+    display: flex; /* Usar flexbox para alinhar os elementos filhos em coluna */
+    flex-direction: column; /* Alinhar os elementos verticalmente em coluna */
+    align-items: center; /* Alinhar horizontalmente ao centro */
+    margin-top: -10px; /* Margem superior negativa para mover o conteúdo para cima */
+  }
+  
+  .apresentacao {
+    text-align: center; /* Centralizar o conteúdo de texto */
+    padding: 35px; /* Adicionar algum espaçamento interno opcional */
+    margin-top: -160px;
+  }
+  
+  .apresentacao h1,
+  .apresentacao p,
+  .apresentacao button {
+    margin: 2px; /* Adicionar margens entre os elementos internos */
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+  }
+  
+  .saiba {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 12px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .saiba:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .saiba a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .entrar {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 12px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .entrar:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .entrar a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .apresentacao-conteiner img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .atletas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #e1e5f2;
+    position: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 71%;
+  }
+  
+  .card {
+    width: 90%;
+    height: 85%;
+    background-color: #043A57;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinhar a imagem na parte superior verticalmente */
+    align-items: center; /* Alinhar a imagem no centro horizontalmente */
+    position: center;
+    border-radius: 30px;
+    margin: 5%;
+    margin-top: 10px;
+  }
+  
+  .card-content {
+    flex-grow: 1; /* Faz com que o conteúdo do cartão ocupe o espaço restante na vertical */
+  }
+  
+  .card img {
+    margin-top: 5%;
+    border-radius: 20px;
+    max-width: 90%;
+    height: auto;
+  }
+  
+  h1{
+    font-size: 20px;
+
+  }
+
+  h3{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    margin-top: 5%;
+  }
+  
+  p{
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    color: #bfdbf7;
+    text-align: justify;
+    font-size: 10px;
+    margin: 4%;
+    word-spacing: auto;
+  }
+  
+  .instagram{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .instagram-2{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .instagram-3{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .sobre{
+    background: #e1e5f2;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    position: relative;
+  }
+  
+  .sobre img{
+    width: auto;
+    height: 20%;
+    margin-top: 2%;
+  }
+  
+  .sobre p{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .sobre a{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .sobre a:hover{
+    color: #84ADAF;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  nav {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    height: 55px;
+    width: 100%;
+    background-color: #84ADAF;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+  }
+
+img.logo {
+  height: 40px;
+  width: auto;
+  margin-left: -80px;
+}
+nav .menu-btn i {
+  display: block;
+}
+nav ul {
+  position: fixed;
+  top: 55px;
+  left: -100%;
+  background-color: #84ADAF;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  display: block;
+  transition: all 0.3s ease;
+}
+nav ul.open {
+  left: 0;
+}
+nav ul li {
+  width: 100%;
+  margin: 50px;
+}
+nav ul li a {
+  font-size: 23px;
+}
+nav ul li a.active {
+  background-color: #043A57;
+  color: #E6E6E6;
+}
+nav ul li a.active:hover {
+  background-color: #84ADAF;
+  color: #043A57;
+  border-style: solid;
+}
+}
+
+@media (max-width: 450px) and (min-width: 425px){
+  .apresentacao-conteiner {
+    display: flex; /* Usar flexbox para alinhar os elementos filhos em coluna */
+    flex-direction: column; /* Alinhar os elementos verticalmente em coluna */
+    align-items: center; /* Alinhar horizontalmente ao centro */
+    margin-top: -5px; /* Margem superior negativa para mover o conteúdo para cima */
+  }
+  
+  .apresentacao {
+    text-align: center; /* Centralizar o conteúdo de texto */
+    padding: 35px; /* Adicionar algum espaçamento interno opcional */
+    margin-top: -130px;
+  }
+  
+  .apresentacao h1,
+  .apresentacao p,
+  .apresentacao button {
+    margin: 2px; /* Adicionar margens entre os elementos internos */
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+  }
+  
+  .saiba {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 10px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .saiba:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .saiba a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .entrar {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 10px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .entrar:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .entrar a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .apresentacao-conteiner img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .atletas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #e1e5f2;
+    position: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 65%;
+  }
+  
+  .card {
+    width: 90%;
+    height: 86%;
+    background-color: #043A57;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinhar a imagem na parte superior verticalmente */
+    align-items: center; /* Alinhar a imagem no centro horizontalmente */
+    position: center;
+    border-radius: 30px;
+    margin: 5%;
+    margin-top: 10px;
+  }
+  
+  .card-content {
+    flex-grow: 1; /* Faz com que o conteúdo do cartão ocupe o espaço restante na vertical */
+  }
+  
+  .card img {
+    margin-top: 5%;
+    border-radius: 20px;
+    max-width: 90%;
+    height: auto;
+  }
+  
+  h1{
+    font-size: 18px;
+
+  }
+
+  h3{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    margin-top: 2%;
+    font-size: 15px;
+  }
+  
+  p{
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    color: #bfdbf7;
+    text-align: justify;
+    font-size: 10px;
+    margin: 4%;
+    word-spacing: auto;
+  }
+  
+  .instagram{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .instagram-2{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .instagram-3{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .sobre{
+    background: #e1e5f2;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    position: relative;
+  }
+  
+  .sobre img{
+    width: auto;
+    height: 20%;
+    margin-top: 2%;
+  }
+  
+  .sobre p{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .sobre a{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .sobre a:hover{
+    color: #84ADAF;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  nav {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    height: 55px;
+    width: 100%;
+    background-color: #84ADAF;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+  }
+
+img.logo {
+  height: 40px;
+  width: auto;
+  margin-left: -80px;
+}
+nav .menu-btn i {
+  display: block;
+}
+nav ul {
+  position: fixed;
+  top: 55px;
+  left: -100%;
+  background-color: #84ADAF;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  display: block;
+  transition: all 0.3s ease;
+}
+nav ul.open {
+  left: 0;
+}
+nav ul li {
+  width: 100%;
+  margin: 50px;
+}
+nav ul li a {
+  font-size: 23px;
+}
+nav ul li a.active {
+  background-color: #043A57;
+  color: #E6E6E6;
+}
+nav ul li a.active:hover {
+  background-color: #84ADAF;
+  color: #043A57;
+  border-style: solid;
+}
+}
+@media (max-width: 425px) and (min-width: 350px){
+  .apresentacao-conteiner {
+    display: flex; /* Usar flexbox para alinhar os elementos filhos em coluna */
+    flex-direction: column; /* Alinhar os elementos verticalmente em coluna */
+    align-items: center; /* Alinhar horizontalmente ao centro */
+    margin-top: -5px; /* Margem superior negativa para mover o conteúdo para cima */
+  }
+  
+  .apresentacao {
+    text-align: center; /* Centralizar o conteúdo de texto */
+    padding: 35px; /* Adicionar algum espaçamento interno opcional */
+    margin-top: -130px;
+  }
+  
+  .apresentacao h1,
+  .apresentacao p,
+  .apresentacao button {
+    margin: 2px; /* Adicionar margens entre os elementos internos */
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+  }
+  
+  .saiba {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 10px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .saiba:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .saiba a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .entrar {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 10px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .entrar:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .entrar a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .apresentacao-conteiner img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .atletas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #e1e5f2;
+    position: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 69%;
+  }
+  
+  .card {
+    flex: 1;
+    width: 90%;
+    height: 86%;
+    background-color: #043A57;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinhar a imagem na parte superior verticalmente */
+    align-items: center; /* Alinhar a imagem no centro horizontalmente */
+    position: center;
+    border-radius: 30px;
+    margin: 5%;
+    margin-top: 0px;
+  }
+  
+  .card-content {
+    flex-grow: 1; /* Faz com que o conteúdo do cartão ocupe o espaço restante na vertical */
+  }
+  
+  .card img {
+    margin-top: 5%;
+    border-radius: 20px;
+    max-width: 90%;
+    height: auto;
+  }
+  
+  h1{
+    font-size: 18px;
+
+  }
+
+  h3{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    margin-top: 1%;
+    font-size: 15px;
+  }
+  
+  p{
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    color: #bfdbf7;
+    text-align: justify;
+    font-size: 10px;
+    margin: 4%;
+    word-spacing: auto;
+  }
+  
+  .instagram{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .instagram-2{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .instagram-3{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .sobre{
+    background: #e1e5f2;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    position: relative;
+  }
+  
+  .sobre img{
+    width: auto;
+    height: 20%;
+    margin-top: 2%;
+  }
+  
+  .sobre p{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .sobre a{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .sobre a:hover{
+    color: #84ADAF;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  nav {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    height: 55px;
+    width: 100%;
+    background-color: #84ADAF;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+  }
+
+img.logo {
+  height: 40px;
+  width: auto;
+  margin-left: -80px;
+}
+nav .menu-btn i {
+  display: block;
+}
+nav ul {
+  position: fixed;
+  top: 55px;
+  left: -100%;
+  background-color: #84ADAF;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  display: block;
+  transition: all 0.3s ease;
+}
+nav ul.open {
+  left: 0;
+}
+nav ul li {
+  width: 100%;
+  margin: 50px;
+}
+nav ul li a {
+  font-size: 23px;
+}
+nav ul li a.active {
+  background-color: #043A57;
+  color: #E6E6E6;
+}
+nav ul li a.active:hover {
+  background-color: #84ADAF;
+  color: #043A57;
+  border-style: solid;
+}
+}
+
+
+@media (max-width: 350px) and (min-width: 335px){
+  .apresentacao-conteiner {
+    display: flex; /* Usar flexbox para alinhar os elementos filhos em coluna */
+    flex-direction: column; /* Alinhar os elementos verticalmente em coluna */
+    align-items: center; /* Alinhar horizontalmente ao centro */
+    margin-top: 0px; /* Margem superior negativa para mover o conteúdo para cima */
+  }
+  
+  .apresentacao {
+    text-align: center; /* Centralizar o conteúdo de texto */
+    padding: 35px; /* Adicionar algum espaçamento interno opcional */
+    margin-top: -130px;
+  }
+  
+  .apresentacao h1,
+  .apresentacao p,
+  .apresentacao button {
+    margin: 2px; /* Adicionar margens entre os elementos internos */
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+  }
+  
+  .saiba {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 12px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .saiba:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .saiba a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .entrar {
+    background-color: #E6E6E6; /* Cor de fundo */
+    color: #043A57; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Remover borda */
+    border-radius: 15px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    font-size: 12px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+  }
+  
+  .entrar:hover {
+    background-color: #84ADAF; /* Cor de fundo ao passar o mouse */
+    border-color: #043A57;
+  }
+  
+  .entrar a{
+    text-decoration: none;
+    color: #043A57;
+  }
+  
+  .apresentacao-conteiner img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .atletas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #e1e5f2;
+    position: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 66%;
+  }
+  
+  .card {
+    width: 90%;
+    height: 85%;
+    background-color: #043A57;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinhar a imagem na parte superior verticalmente */
+    align-items: center; /* Alinhar a imagem no centro horizontalmente */
+    position: center;
+    border-radius: 30px;
+    margin: 5%;
+    margin-top: 10px;
+  }
+  .card-content {
+    flex-grow: 0; /* Faz com que o conteúdo do cartão ocupe o espaço restante na vertical */
+  }
+  
+  .card img {
+    margin-top: 5%;
+    border-radius: 20px;
+    max-width: 90%;
+    height: auto;
+  }
+  
+  h1{
+    font-size: 17px;
+
+  }
+
+  h3{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #bfdbf7;
+    margin-top: 5%;
+    font-size: 15px;
+  }
+
+  
+  p{
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    color: #bfdbf7;
+    text-align: justify;
+    font-size: 9px;
+    margin: 4%;
+    word-spacing: auto;
+  }
+  
+  .instagram{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .instagram-2{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .instagram-3{
+    margin-top: 0%;
+    display: inline-flex;
+  }
+  
+  .sobre{
+    background: #e1e5f2;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    position: relative;
+  }
+  
+  .sobre img{
+    width: auto;
+    height: 20%;
+    margin-top: 2%;
+  }
+  
+  .sobre p{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .sobre a{
+    color: #043A57;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .sobre a:hover{
+    color: #84ADAF;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  nav {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    height: 60px;
+    width: 100%;
+    background-color: #84ADAF;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+  }
+
+img.logo {
+  height: 40px;
+  width: auto;
+  margin-left: -80px;
+}
+nav .menu-btn i {
+  display: block;
+}
+nav ul {
+  position: fixed;
+  top: 60px;
+  left: -100%;
+  background-color: #84ADAF;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  display: block;
+  transition: all 0.3s ease;
+}
+nav ul.open {
+  left: 0;
+}
+nav ul li {
+  width: 100%;
+  margin: 50px;
+}
+nav ul li a {
+  font-size: 23px;
+}
+nav ul li a.active {
+  background-color: #043A57;
+  color: #E6E6E6;
+}
+nav ul li a.active:hover {
+  background-color: #84ADAF;
+  color: #043A57;
+  border-style: solid;
+}
+}
+
+/*Tradução*/
+.btnTraducao{
+  width: 4%;
+  height: 5%;
+  position: fixed;
+  margin-left: 96%;
+  z-index: 99;
+}
+
+.btnTraducao button{
+  background: none;
+  border: none;
+}
+
+.simbololibras{
+  width: 100%;
+  height: 100%;
+}
+
+.videoTraducao{
+  width: 175px;
+  height: 325px;
+  position: fixed;
+  background: none;
+  margin-left: 3%;
+  z-index: 99;
+}
+
+.video-container {
+  display: none; /* Ocultar o contêiner de vídeo por padrão */
+  overflow: hidden; /* Garantir que as bordas redondas não mostrem conteúdo fora do contêiner */
+  border-radius: 10px; /* Definir o raio da borda para torná-la redonda */
+}
+
+#meuVideo {
+  border-radius: 10px; /* Aplicar o mesmo raio da borda ao vídeo dentro do contêiner */
+}
+
+/*Tradução*/
+
+/* Responsividade */
+@media screen and (max-width: 1800px) {
+  .btnTraducao{
+    width: 4%;
+    height: 5%;
+    position: fixed;
+    margin-left: 96%;
+    z-index: 99;
+  }
+  
+  .btnTraducao button{
+    background: none;
+    border: none;
+  }
+  
+  .simbololibras{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .videoTraducao{
+    width: 175px;
+    height: auto;
+    position: fixed;
+    background: none;
+    margin-left: 3%;
+    z-index: 99;
+  }
+  
+  .video-container {
+    display: none; /* Ocultar o contêiner de vídeo por padrão */
+    overflow: hidden; /* Garantir que as bordas redondas não mostrem conteúdo fora do contêiner */
+    border-radius: 10px; /* Definir o raio da borda para torná-la redonda */
+  }
+  
+  #meuVideo {
+    border-radius: 10px; /* Aplicar o mesmo raio da borda ao vídeo dentro do contêiner */
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .btnTraducao{
+    width: 4%;
+    height: 5%;
+    position: fixed;
+    margin-left: 96%;
+    z-index: 99;
+  }
+  
+  .btnTraducao button{
+    background: none;
+    border: none;
+  }
+  
+  .simbololibras{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .videoTraducao{
+    width: 175px;
+    height: auto;
+    position: fixed;
+    background: none;
+    margin-left: 3%;
+    z-index: 99;
+  }
+  
+  .video-container {
+    display: none; /* Ocultar o contêiner de vídeo por padrão */
+    overflow: hidden; /* Garantir que as bordas redondas não mostrem conteúdo fora do contêiner */
+    border-radius: 10px; /* Definir o raio da borda para torná-la redonda */
+  }
+  
+  #meuVideo {
+    border-radius: 10px; /* Aplicar o mesmo raio da borda ao vídeo dentro do contêiner */
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .btnTraducao{
+    width: 4%;
+    height: 5%;
+    position: fixed;
+    margin-left: 96%;
+    z-index: 99;
+  }
+  
+  .btnTraducao button{
+    background: none;
+    border: none;
+  }
+  
+  .simbololibras{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .videoTraducao{
+    width: 145px;
+    height: auto;
+    position: fixed;
+    background: none;
+    margin-left: 3%;
+    z-index: 99;
+  }
+  
+  .video-container {
+    display: none; /* Ocultar o contêiner de vídeo por padrão */
+    overflow: hidden; /* Garantir que as bordas redondas não mostrem conteúdo fora do contêiner */
+    border-radius: 10px; /* Definir o raio da borda para torná-la redonda */
+  }
+  
+  #meuVideo {
+    border-radius: 10px; /* Aplicar o mesmo raio da borda ao vídeo dentro do contêiner */
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .btnTraducao{
+    width: 6%;
+    height: 7%;
+    position: fixed;
+    margin-left: 96%;
+    z-index: 99;
+  }
+  
+  .btnTraducao button{
+    background: none;
+    border: none;
+  }
+  
+  .simbololibras{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .videoTraducao{
+    width: 125px;
+    height: auto;
+    position: fixed;
+    background: none;
+    margin-left: 3%;
+    z-index: 99;
+  }
+  
+  .video-container {
+    display: none; /* Ocultar o contêiner de vídeo por padrão */
+    overflow: hidden; /* Garantir que as bordas redondas não mostrem conteúdo fora do contêiner */
+    border-radius: 10px; /* Definir o raio da borda para torná-la redonda */
+  }
+  
+  #meuVideo {
+    border-radius: 10px; /* Aplicar o mesmo raio da borda ao vídeo dentro do contêiner */
+  }
+  .btnTraducao {
+    margin-left: 90%; /* Altere conforme necessário */
+  }
+
+  .videoTraducao {
+    margin-left: 2%; /* Altere conforme necessário */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btnTraducao{
+    width: 7%;
+    height: 8%;
+    position: fixed;
+    margin-left: 96%;
+    z-index: 99;
+  }
+  
+  .btnTraducao button{
+    background: none;
+    border: none;
+  }
+  
+  .simbololibras{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .videoTraducao{
+    width: 100px;
+    height: auto;
+    position: fixed;
+    background: none;
+    margin-left: 3%;
+    z-index: 99;
+  }
+  
+  .video-container {
+    display: none; /* Ocultar o contêiner de vídeo por padrão */
+    overflow: hidden; /* Garantir que as bordas redondas não mostrem conteúdo fora do contêiner */
+    border-radius: 10px; /* Definir o raio da borda para torná-la redonda */
+  }
+  
+  #meuVideo {
+    border-radius: 10px; /* Aplicar o mesmo raio da borda ao vídeo dentro do contêiner */
+  }
+  .btnTraducao {
+    margin-left: 90%; /* Altere conforme necessário */
+  }
+
+  .videoTraducao {
+    margin-left: 2%; /* Altere conforme necessário */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .btnTraducao{
+    width: 8%;
+    height: 9%;
+    position: fixed;
+    margin-left: 85%;
+    z-index: 99;
+  }
+  
+  .btnTraducao button{
+    background: none;
+    border: none;
+  }
+  
+  .simbololibras{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .videoTraducao{
+    width: 80px;
+    height: auto;
+    position: fixed;
+    background: none;
+    margin-left: 3%;
+    z-index: 99;
+  }
+  
+}
+
+@media screen and (max-width: 350px) {
+  .btnTraducao{
+    width: 9%;
+    height: 10%;
+    position: fixed;
+    margin-left: 90%;
+    z-index: 99;
+  }
+  
+  .btnTraducao button{
+    background: none;
+    border: none;
+  }
+  
+  .simbololibras{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .videoTraducao{
+    width: 75px;
+    height: auto;
+    position: fixed;
+    background: none;
+    margin-left: 2%;
+    z-index: 99;
+  }
+  
+  .video-container {
+    display: none; /* Ocultar o contêiner de vídeo por padrão */
+    overflow: hidden; /* Garantir que as bordas redondas não mostrem conteúdo fora do contêiner */
+    border-radius: 10px; /* Definir o raio da borda para torná-la redonda */
+  }
+  
+  #meuVideo {
+    border-radius: 10px; /* Aplicar o mesmo raio da borda ao vídeo dentro do contêiner */
+  }
+
+  
+
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --darkBlue-color: #043A57;
+    --whaterGreen-color: #84ADAF;
+    --white-color: #fff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", serif;
+}
+
+.mainContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+    
+}
+
+.backgroundImage {
+    width: 100%;
+    height: auto; 
+    max-height: 87vh; 
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.overlay h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--whaterGreen-color);
+}
+
+.overlay p {
+    font-size: 1.2rem;
+}
+
+.overlay .buttonsOverlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.overlay .buttonsOverlay a{
+    text-decoration: none;
+}
+
+.overlay .buttonsOverlay p{
+    color: var(--white-color);
+    border: solid 2px var(--whaterGreen-color);
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.overlay .buttonsOverlay p:hover{
+    color: var(--white-color);
+    background-color: var(--whaterGreen-color);
+}
+
+.athleteCards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -130px;
+}

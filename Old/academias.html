@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link do css & js-->
+    <link rel="stylesheet" type="text/css" href="CSS/academias.css" media="screen" />
+    <link  href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.18.0/maps/maps.css"/>
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.18.0/maps/maps-web.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!--Importanto fonte-->
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+    <!--Titulo da Pagina-->
+    <title>Academias Parceiras</title>
+
+    <!--Icone da pagina-->
+    <link rel="icon" type="image/x-icon" href="./images/icone.png">
+</head>
+<body verificarCadastro()>
+
+  <div class="blur-message">
+    <img src="./images/logo.png">
+    <h2>Para visualizar as academias, é necessário se cadastrar. Clique <a href='cadastro.html'>AQUI</a> para se cadastrar.</h2>
+</div>
+
+    <nav>
+        <div><a href="index.html"><img src="./images/logo.png" class="logo"></a></div>
+      
+        <div class="menu-btn">
+          <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+        </div>
+       
+        <ul>
+          <li> <a href="index.html">Inicio</a></li>
+          <li> <a href="academias.html">Academias Parceiras</a></li>
+          <li> <a href="sobre-nos.html">Sobre-nós</a></li>
+          <li> <a href="contato.html">Contato</a></li>
+          <li> <a href="cadastro.html" class="active">Cadastre-se</a></li> 
+        </ul>
+      </nav>
+
+       <!-- <div class= "body"> -->
+      <div class="titulo">
+       <h1>Academias Parceiras</h1>
+      </div>
+
+      <div class="filtro">
+        <label for="cidade">Filtre a academia por cidade:</label>
+        <select id="cidade">
+          <option value="todas">Todas</option>
+          <option value="hortolandia">Hortolândia</option>
+          <option value="campinas">Campinas</option>
+          <option value="paulinia">Paulínia</option>
+        </select>
+      </div>
+    <div class="container"> 
+    <div class="carousel">
+      <div class="card" data-cidade="hortolandia" draggable="true">
+        <img src="./images/xprime-removebg-preview.png" alt="Sua Imagem"> 
+        <h2> <a href="./academias/xprime.html">Saiba Mais </a></h2>
+      </div>
+      <div class="card" data-cidade="campinas" draggable="true">
+        <img src="./images/zyro-image-removebg-preview-removebg-preview.png" alt="Sua Imagem"> 
+        <h2> <a href="./academias/academiasc.html">Saiba Mais </a></h2>
+      </div>
+      <div class="card" data-cidade="campinas" draggable="true">
+        <img src="./images/chrissports-removebg-preview.png" alt="Sua Imagem"> 
+        <h2> <a href="./academias/academiachrissports.html">Saiba Mais </a></h2>
+
+      </div>
+      <div class="card" data-cidade="campinas" draggable="true">
+        <img src="./images/iron2.png" alt="Sua Imagem"> 
+        <h2> <a href="./academias/ironcompany.html">Saiba Mais </a></h2>
+      </div>
+      <div class="card" data-cidade="campinas" draggable="true">
+        <img src="./images/bodytech-logo.png" alt="Sua Imagem"> 
+        <h2> <a href="./academias/academiabt.html">Saiba Mais </a></h2>
+
+      </div>
+      <div class="card" data-cidade="paulinia" draggable="true">
+        <img src="./images/logo2023-01-1024x660 (1).png" alt="Sua Imagem"> 
+        <h2> <a href="./academias/clipacademia.html">Saiba Mais </a></h2>
+
+      </div>
+      <div class="card" data-cidade="campinas" draggable="true">
+        <img src="./images/image-removebg-preview-removebg-preview.png" alt="Sua Imagem"> 
+        <h2> <a href="./academias/fixfit.html">Saiba Mais </a></h2>
+
+      </div>
+
+      <div class="card" data-cidade="campinas" draggable="true">
+        <img src="./images/forcabruta-removebg-preview.png" alt="Sua Imagem"> 
+        <h2> <a href="./academias/forcabruta.html">Saiba Mais </a></h2>
+
+      </div>
+
+      <div class="card" data-cidade="hortolandia" draggable="true">
+        <img src="./images/smart-fit-logo.png" alt="Sua Imagem"> 
+        <h2> <a href="./academias/smartfit.html">Saiba Mais </a></h2>
+
+      </div>
+    </div>
+    </div>
+</body> 
+<script src="./JS/academias.js"></script>
+</html>

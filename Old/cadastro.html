@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link do css & js-->
+    <link rel="stylesheet" type="text/css" href="./CSS/cadastro.css" media="screen" />
+
+    <!--Importanto fonte-->
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+    <!--Importanto Icone-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <!--Titulo da Pagina-->
+    <title>INCLUSIVE GYM</title>
+    
+    <!--Icone da pagina-->
+    <link rel="icon" type="image/x-icon" href="./images/icone.png">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div><a href="index.html"><img src="./images/logo.png" class="logo"></a></div>
+
+  <div class="menu-btn">
+    <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+  </div>
+ 
+  <ul>
+    <li> <a href="index.html">Inicio</a></li>
+    <li> <a href="academias.html">Academias Parceiras</a></li>
+    <li> <a href="sobre-nos.html">Sobre-nós</a></li>
+    <li> <a href="#">Contato</a></li>
+    <li> <a href="cadastro.html" class="active">Entrar</a></li> 
+  </ul>
+</nav>
+
+<!-- Form -->
+
+<form action="/INCLUSIVE-GYM/PHP/processar_cadastro.php" method="post">
+    <div class="container">
+        <div class="entrar">
+            <div><a href="index.html"><img src="./images/logo.png" class="logo-cadastro"></a></div>
+            <h1>Bem-vindo de volta!</h1>
+            <p>Acesse sua conta de usuário agora mesmo.</p>
+            <a href="login.html" class="btn-entrar">Entrar</a>
+            <a href="esqueci-senha.html" class="esqueci-senha">Esqueci minha senha.</a>
+        </div>
+        <div class="novo-cadastro">
+            <h2>Crie sua conta <br> de Usuário</h2>
+            <h3>Preencha seus dados</h3>
+            <div class="form-cadastro">
+                <div class="input-container">
+                    <i class="fa fa-user icon"></i>
+                    <input type="text" placeholder="Insira seu Nome" name="nome" id="nome" class="inputNome" required>
+                </div>
+                <br>
+                <div class="input-container">
+                    <i class="fa fa-envelope icon"></i>
+                    <input type="email" placeholder="Insira seu Email" name="email" id="email" class="inputEmail" required>
+                </div>
+                <br>
+                <div class="input-container">
+                    <i class="fa fa-calendar icon"></i>
+                    <input type="date" placeholder="Insira sua Data de Nascimento" name="dataNasc" id="dataNasc" class="inputData" required>
+                </div>
+                <br>
+                <div class="input-container">
+                    <i class="fa fa-lock icon"></i>
+                    <input type="password" placeholder="Insira sua Senha" name="senha" id="senha" class="inputSenha" required>
+                </div>
+                <br>
+                <div class="input-container">
+                    <i class="fa fa-lock icon"></i>
+                    <input type="password" placeholder="Confirme sua Senha" name="confirmarSenha" id="confirmarSenha" class="inputConfirmarSenha" required>
+                </div>
+                <br>
+                <input type="submit" value="Enviar" class="btn-enviar">
+            </div>        
+        </div>
+    </div>
+</form>
+
+</body>
+<script src="./JS/cadastro.js"></script>
+</html>

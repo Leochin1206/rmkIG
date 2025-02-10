@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --darkBlue-color: #043A57;
+    --whaterGreen-color: #84ADAF;
+    --white-color: #fff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", serif;
+}
+
+.cardAthlete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 30%;
+    height: 540px;
+    margin: 1%;
+    border-radius: 4px;
+    background-color: var(--whaterGreen-color);
+}
+
+.cardAthlete .imgAthlete{
+    width: 90%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.cardAthlete h1{
+    color: var(--white-color);
+    font-size: 26px;
+    margin: 10px 0 10px 0;
+}
+
+.containerDescription{
+    margin: 13px 0 13px 0;
+    width: 90%;
+    text-align: justify;
+    color: var(--white-color);
+}
+
+.mainAchievements{
+    color: var(--white-color);
+    width: 90%;
+    flex-direction: star;
+    margin: 0 0 10px 0;
+}
+
+.achievements{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 90%;
+    font-size: 18px;
+    color: var(--white-color);
+    margin: 0 0 4px 0;
+}
+
+.instagram{
+    margin: 10px;
+    font-size: 18px;
+}
+
+.instagram a{
+    text-decoration: none;
+    color: var(--white-color);
+}

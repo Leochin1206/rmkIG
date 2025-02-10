@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --darkBlue-color: #043A57;
+    --whaterGreen-color: #84ADAF;
+    --white-color: #fff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", serif;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContainer {
+    flex: 1; 
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    background-color: var(--white-color);
+    color: var(--whaterGreen-color);
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    box-shadow: 0px -4px 10px #0000001a;
+}
+
+

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --darkBlue-color: #043A57;
+    --whaterGreen-color: #84ADAF;
+    --white-color: #fff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white-color);
+    box-shadow: 0px 4px 2px #0000001a;
+}
+
+.logoNavBar img{
+    height: 60px;
+    width: auto;
+    margin-left: 50px;
+}
+
+.linksNavBar{
+    display: flex;
+    margin-right: 50px;
+}
+
+.linksNavBar a{
+    text-decoration: none;
+}
+
+.linksNavBar p{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--whaterGreen-color);
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.linksNavBar p:hover{
+    color: var(--white-color);
+    background-color: var(--whaterGreen-color);
+
+}
+
+.linksNavBar .login{
+    padding: 6px 12px;
+    color: var(--whaterGreen-color);
+    border: solid 2px var(--whaterGreen-color);
+}
+
+.linksNavBar .login:hover{
+    background-color: var(--whaterGreen-color);
+    color: var(--white-color);
+
+}

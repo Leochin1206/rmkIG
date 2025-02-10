@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link do css & js-->
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css" media="screen" />
+
+    <!--Importanto fonte-->
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+    <!--Importanto Icone-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <!--Titulo da Pagina-->
+    <title>INCLUSIVE GYM</title>
+    
+    <!--Icone da pagina-->
+    <link rel="icon" type="image/x-icon" href="./images/icone.png">
+</head>
+<body>
+
+<!-------------------------------------- Navbar -------------------------------------->
+<nav>
+  <!-- Logo na Navbar-->
+  <div><a href="index.html"><img src="./images/logo.png" class="logo"></a></div>
+  <!-- Logo na Navbar-->
+
+  <!-- Botão de Menu -->
+  <div class="menu-btn">
+    <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+  </div>
+  <!-- Botão de Menu -->
+
+  <!-- Links da Navbar -->
+  <ul>
+    <li> <a href="index.html">Inicio</a></li>
+    <li> <a href="academias.html">Academias Parceiras</a></li>
+    <li> <a href="sobre-nos.html">Sobre-nós</a></li>
+    <li> <a href="#">Contato</a></li>
+    <li> <a href="login.html" class="active">Entrar</a></li> 
+  </ul>
+  <!-- Links da Navbar -->
+</nav>
+<!-------------------------------------- Navbar -------------------------------------->
+
+<!-------------------------------------- Conteiner Foto -------------------------------------->
+<div class="btnTraducao">
+  <button id="btnAbrirVideo" onclick="toggleVideo()">
+      <img class="simbololibras" src="./images/simbololibras.png" alt="Libras">
+  </button>
+</div>
+
+<div id="videoContainer" class="video-container">
+  <video id="meuVideo" class="videoTraducao" controls autoplay loop>
+      <source src="./images/traducao_libras.mp4" type="video/mp4">
+      Seu navegador não suporta o elemento de vídeo.
+  </video>
+</div>
+  <div class="apresentacao-conteiner">
+    <img src="./images/apresentacao.jpg">
+    <div class="apresentacao">
+      <h1>ENTENDA SOBRE O PROJETO</h1>
+      <p>
+      O Inclusive Gym, representa um esforço tecnológico notável na busca pela igualdade 
+      de oportunidades no esporte, projetado para pessoas com deficiência visual 
+      </p>
+    <button class="saiba"><a href="sobre-nos.html">Saiba-Mais</a></button>
+    <button class="entrar"><a href="cadastro.html">Entrar</a></button>
+    </div>
+  </div>
+<!-------------------------------------- Conteiner Foto -------------------------------------->
+
+
+<!-------------------------------------- Atletas -------------------------------------->
+<div class="conteiner">
+<div class="atletas">
+    <div class="card">
+      <h3>Ana Gabriely Brito</h3>
+      <img src="./images/CARROSSEL ANA BRITO.jpeg" alt="Sua Imagem">
+      <p>Tem baixa visão devido ao albinismo. Radicada do Rio de Janeiro, conheceu o goalball na Educação Física no Instituto Benjamin Constant e começou a praticar a modalidade em alto rendimento em 2014. Primeira convocação para a Seleção em 2016.
+        <br>
+        <br>
+        <strong>PRINCIPAIS CONQUISTAS:</strong>
+        <br>
+        Ouro no Campeonato das Américas 2022. 
+        <br>
+        Ouro nos Jogos Parapan-Americanos Lima 2019. 
+        <br>
+        Bronze no Mundial de Goalball Malmö 2018.
+        <div class="instagram">
+        <img src="./images/instagram.svg"> <p>@anagabrielybrito</p>
+        </div>
+        <br>
+      </p>
+  </div>
+
+  <div class="card">
+      <h3>Guilherme Maia</h3>
+      <img src="./images/CARROSSEL GUILHERME.jpeg" alt="Sua Imagem">
+      <p>
+        Possui deficiência auditiva bilateral profunda. Estudou em escolas de ouvintes e especializadas no ensino fundamental e médio
+        <br>
+        <br>
+
+        <strong>PRINCIPAIS CONQUISTAS:</strong>
+        <br>
+        Tricampeão santista – 2008 a 2011 (ouvintes).
+        <br>
+        Bicampeão paulista – 2008 e 2011 (ouvintes).
+        <br>
+        Mundial de surdos em Coimbra-Portugal – 2011, 3 medalhas (2 pratas e 1 bronze).
+      </p>
+      
+       <div class="instagram-2">
+        <img src="./images/instagram.svg"> <p>@guimaia89</p>
+      </div>
+  </div>
+
+  <div class="card">
+      <h3>Wendell Belarmino</h3>
+      <img src="./images/CARROSSEL WENDELL.jpeg" alt="Sua Imagem">
+      <p>
+        Wendell, atleta de natação tem com glaucoma congênito. Precisou passar por dez transplantes de córneas. 
+        Ainda assim a perda da visão segue sendo gradativa tanto que em 2019 ele foi reclassificado e caiu da classe S12 para a S11, pois já estava apenas com 3% de resíduo visual. 
+        <br>
+        <br>
+        <strong>PRINCIPAIS CONQUISTAS:</strong>
+        <br>
+        49 pontos no Mundial de Londres 2019.
+        <br>
+        Bronze nos 100m borboleta nos Jogos Paralímpicos de Tóquio 2020.
+        <br>
+        Prata nos 400m livre nos Jogos Parapan-Americanos de Lima 2019.
+      </p>
+      <div class="instagram-3">
+        <img src="./images/instagram.svg"> <p>@wendell_belarmino</p>
+      </div>
+    </div></div>
+</div>
+<!-------------------------------------- Atletas -------------------------------------->
+
+<!-------------------------------------- Rodapé -------------------------------------->
+
+<!-------------------------------------- Rodapé -------------------------------------->
+</body>
+<script src="./JS/index.js"></script>
+</html>

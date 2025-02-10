@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+
+/* NAVBAR */
+nav {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #84ADAF;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+  }
+  
+  img.logo {
+    height: 60px;
+    width: auto;
+    margin-left: -80px;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 5px;
+  }
+  
+  nav ul li a {
+    color: #043A57;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 8px 15px;
+    border-radius: 13px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    font-family: Abel, sans-serif;
+    text-transform: uppercase;
+  }
+  
+  nav ul li a:hover {
+    background-color: #043A57;
+    color: #84ADAF;
+  }
+  
+  nav ul li a.active {
+    background-color: #043A57;
+    color: #E6E6E6;
+  }
+  
+  nav ul li a.active:hover {
+    background-color: #84ADAF;
+    color: #043A57;
+    border-style: solid;
+  }
+  
+  nav .menu-btn i {
+    color: #043A57;
+    cursor: pointer;
+    display: none;
+  }
+
+  @media (max-width: 975px) {
+    img.logo {
+      height: 60px;
+      width: auto;
+      margin-left: -80px;
+    }
+    nav .menu-btn i {
+      display: block;
+    }
+    nav ul {
+      margin: 0px;
+      padding: 0px;
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      background-color: #84ADAF;
+      height: 100vh;
+      width: 80%;
+      text-align: center;
+      align-items: center;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    nav ul.open {
+      left: 0;
+    }
+    nav ul li {
+      width: 100%;
+      margin-bottom: 50px;
+      margin-left: 0;
+    }
+    nav ul li a {
+      font-size: 23px;
+    }
+    nav ul li a.active {
+      background-color: #043A57;
+      color: #E6E6E6;
+    }
+    nav ul li a.active:hover {
+      background-color: #84ADAF;
+      color: #043A57;
+      border-style: solid;
+    }
+  }
+  
+  @media (max-width: 930px) {
+    img.logo {
+      height: 60px;
+      width: auto;
+      margin-left: -80px;
+    }
+    nav .menu-btn i {
+      display: block;
+    }
+    nav ul {
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      background-color: #84ADAF;
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    nav ul.open {
+      left: 0;
+    }
+    nav ul li {
+      width: 100%;
+      margin-bottom: 50px;
+      margin-left: 0;
+    }
+    nav ul li a {
+      font-size: 23px;
+    }
+    nav ul li a.active {
+      background-color: #043A57;
+      color: #E6E6E6;
+    }
+    nav ul li a.active:hover {
+      background-color: #84ADAF;
+      color: #043A57;
+      border-style: solid;
+    }
+  }
+
+  .apresentacao-conteiner {
+    display: flex; /* Usar flexbox para alinhar os elementos filhos em coluna */
+    flex-direction: column; /* Alinhar os elementos verticalmente em coluna */
+    align-items: center; /* Alinhar horizontalmente ao centro */
+    margin-top: -20px; /* Margem superior negativa para mover o conteúdo para cima */
+  }
+  
+  .apresentacao {
+    text-align: center; /* Centralizar o conteúdo de texto */
+    padding: 20px; /* Adicionar algum espaçamento interno opcional */
+    margin-top: -350px;
+  }
+  
+  .apresentacao h1 {
+    margin: 10px; /* Adicionar margens entre os elementos internos */
+    color: #043A57;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    position: relative;
+    margin-top: 40%;
+    font-size: 50px;
+  }
+  
+  .apresentacao-conteiner img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .descricao-conteiner {
+    display: flex;
+    flex-direction: column; /* Define o layout em coluna para colocar a imagem acima do texto */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    width: 70%;
+    height: auto;
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente na página */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    margin-top: 20%;
+  }
+  
+  .descricao-conteiner img {
+    width: auto;
+    height: 50px;
+    margin-top: 10%;
+  }
+  
+  .descricao-conteiner p {
+    font-family: Poppins, sans-serif;
+    font-size: 10px;
+    margin-top: 5%; /* Espaçamento entre a imagem e o texto */
+    color: #043A57;
+  }
+  
+  .integrantes-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2%;
+  }
+  
+  .integrantes {
+    width: 70%;
+    height: auto;
+    background-color: #E6E6E6;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center; /* Alinhar verticalmente no centro */
+    border-radius: 30px;
+    margin: 2%;
+    padding: 10px;
+  }
+  
+  .identificacao img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px; /* Espaço à direita da imagem */
+  }
+  
+  .identificacao h1 {
+    font-family: Poppins, sans-serif;
+    color: #043A57;
+    font-size: 10px;
+    margin-left: 25%;
+    white-space: nowrap; 
+    position: relative;
+    margin-top: -30px;
+  }
+
+  .identificacao h2 {
+    font-family: Poppins, sans-serif;
+    color: #043A57;
+    font-size: 8px;
+    margin-left: 25%;
+    white-space: nowrap;
+    position: relative;
+
+  }
+
+  .identificacao p{
+    font-family: Poppins, sans-serif;
+    color: #043A57;
+    font-size: 10px;
+    margin-top: 3%;
+    margin-left: 0%;
+    position: relative;
+  }
+
+  a{
+    text-decoration: none;
+    text-align: center;
+  }
+
+  @media (min-width: 270px) {
+
+    .descricao-conteiner img {
+      width: auto;
+      height: 70px;
+      margin-top: 10%;
+    }
+
+    .descricao-conteiner {
+      display: flex;
+      flex-direction: column; /* Define o layout em coluna para colocar a imagem acima do texto */
+      align-items: center; /* Centraliza horizontalmente */
+      justify-content: center; /* Centraliza verticalmente */
+      width: 70%;
+      height: auto;
+      margin: 0 auto; /* Centraliza o contêiner horizontalmente na página */
+      text-align: center; /* Centraliza o texto dentro do contêiner */
+      margin-top: 30%;
+    }
+
+    .descricao-conteiner p {
+      font-family: Poppins, sans-serif;
+      font-size: 12px;
+      margin-top: 5%; /* Espaçamento entre a imagem e o texto */
+      color: #043A57;
+    }
+
+    .identificacao h1 {
+      font-family: Poppins, sans-serif;
+      color: #043A57;
+      font-size: 15px;
+      margin-left: 25%;
+      white-space: nowrap; 
+      position: relative;
+      margin-top: -30px;
+    }
+  
+    .identificacao h2 {
+      font-family: Poppins, sans-serif;
+      color: #043A57;
+      font-size: 10px;
+      margin-left: 25%;
+      white-space: nowrap;
+      position: relative;
+  
+    }
+
+    .identificacao p{
+      font-family: Poppins, sans-serif;
+      color: #043A57;
+      font-size: 12px;
+      margin-top: 3%;
+      margin-left: 0%;
+      position: relative;
+    }
+
+    .identificacao img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      margin-right: 10px; /* Espaço à direita da imagem */
+    }
+  }
+
+  @media (min-width: 350px) {
+    .identificacao img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px; /* Espaço à direita da imagem */
+    }
+  }
+
+  @media (min-width: 410px) {
+    .descricao-conteiner img {
+      width: auto;
+      height: 100px;
+      margin-top: 10%;
+    }
+
+    .identificacao p{
+      font-family: Poppins, sans-serif;
+      color: #043A57;
+      font-size: 14px;
+      margin-top: 3%;
+      margin-left: 0%;
+      position: relative;
+    }
+
+    .descricao-conteiner p {
+      font-family: Poppins, sans-serif;
+      font-size: 14px;
+      margin-top: 5%; /* Espaçamento entre a imagem e o texto */
+      color: #043A57;
+    }
+  }
+
+  @media (min-width: 500px) {
+    .identificacao img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px; /* Espaço à direita da imagem */
+    }
+
+    .identificacao h1 {
+      font-family: Poppins, sans-serif;
+      color: #043A57;
+      font-size: 18px;
+      margin-left: 25%;
+      white-space: nowrap; 
+      position: relative;
+      margin-top: -30px;
+    }
+  
+    .identificacao h2 {
+      font-family: Poppins, sans-serif;
+      color: #043A57;
+      font-size: 15px;
+      margin-left: 25%;
+      white-space: nowrap;
+      position: relative;
+  
+    }
+  
+    .identificacao p{
+      font-family: Poppins, sans-serif;
+      color: #043A57;
+      font-size: 15px;
+      margin-top: 3%;
+      margin-left: 0%;
+      position: relative;
+    }
+  }
+
+  @media (min-width: 700px) {
+
+    .descricao-conteiner img {
+      width: auto;
+      height: 100px;
+      margin-top: 10%;
+    }
+
+    .descricao-conteiner p {
+      font-family: Poppins, sans-serif;
+      font-size: 17px;
+      margin-top: 5%; /* Espaçamento entre a imagem e o texto */
+      color: #043A57;
+    }
+
+    .identificacao img {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      margin-right: 10px; /* Espaço à direita da imagem */
+    }
+
+    .identificacao h1 {
+      font-family: Poppins, sans-serif;
+      color: #043A57;
+      font-size: 20px;
+      margin-left: 25%;
+      white-space: nowrap; 
+      position: relative;
+      margin-top: -30px;
+    }
+  
+    .identificacao h2 {
+      font-family: Poppins, sans-serif;
+      color: #043A57;
+      font-size: 16px;
+      margin-left: 25%;
+      white-space: nowrap;
+      position: relative;
+  
+    }
+  
+    .identificacao p{
+      font-family: Poppins, sans-serif;
+      color: #043A57;
+      font-size: 15px;
+      margin-top: 3%;
+      margin-left: 0%;
+      position: relative;
+    }
+  }
+
+  @media (min-width: 800px) {
+    .integrantes {
+      width: 40%;
+      height: auto;
+      background-color: #E6E6E6;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center; /* Alinhar verticalmente no centro */
+      border-radius: 30px;
+      margin: 3%;
+      padding: 25px;
+    }
+
+    .identificacao img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      margin-right: 10px; /* Espaço à direita da imagem */
+    }
+
+    .identificacao h1 {
+      font-family: Poppins, sans-serif;
+      color: #043A57;
+      font-size: 15px;
+      margin-left: 25%;
+      white-space: nowrap; 
+      position: relative;
+      margin-top: -70px;
+    }
+
+    .identificacao h2 {
+      font-family: Poppins, sans-serif;
+      color: #043A57;
+      font-size: 13px;
+      margin-left: 25%;
+      white-space: nowrap;
+      position: relative;
+  
+    }
+
+    .identificacao p{
+      font-family: Poppins, sans-serif;
+      color: #043A57;
+      font-size: 13px;
+      margin-top: 3%;
+      margin-left: 0%;
+      position: relative;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .descricao-conteiner {
+      display: flex;
+      flex-direction: column; /* Define o layout em coluna para colocar a imagem acima do texto */
+      align-items: center; /* Centraliza horizontalmente */
+      justify-content: center; /* Centraliza verticalmente */
+      width: 70%;
+      height: auto;
+      margin: 0 auto; /* Centraliza o contêiner horizontalmente na página */
+      text-align: center; /* Centraliza o texto dentro do contêiner */
+      margin-top: 23%;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .integrantes {
+      width: 27%;
+      height: auto;
+      background-color: #E6E6E6;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center; /* Alinhar verticalmente no centro */
+      border-radius: 30px;
+      margin: 2%;
+      padding: 25px;
+    }
+
+    .descricao-conteiner {
+      display: flex;
+      flex-direction: column; /* Define o layout em coluna para colocar a imagem acima do texto */
+      align-items: center; /* Centraliza horizontalmente */
+      justify-content: center; /* Centraliza verticalmente */
+      width: 70%;
+      height: auto;
+      margin: 0 auto; /* Centraliza o contêiner horizontalmente na página */
+      text-align: center; /* Centraliza o texto dentro do contêiner */
+      margin-top: 20%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .descricao-conteiner {
+      display: flex;
+      flex-direction: column; /* Define o layout em coluna para colocar a imagem acima do texto */
+      align-items: center; /* Centraliza horizontalmente */
+      justify-content: center; /* Centraliza verticalmente */
+      width: 70%;
+      height: auto;
+      margin: 0 auto; /* Centraliza o contêiner horizontalmente na página */
+      text-align: center; /* Centraliza o texto dentro do contêiner */
+      margin-top: 20%;
+    }
+  }
+  
+
