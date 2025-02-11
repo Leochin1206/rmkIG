@@ -68,23 +68,18 @@ export default function Home() {
                     nameInstagram="@wendell_belarmino"
                 />
             </div>
+            <div className="titleGym">
+                <h3 className="title">Panobianco</h3>
+                <h3 className="title">Sky Fit</h3>
+                <h3 className="title">Smart Fit</h3>
+                <h3 className="title">Outras Opções</h3>
+            </div>
+
             <div className="gyms">
-                <div className="gym">
-                    <h3>Panobianco</h3>
-                    <img src={panobiancoLogo} alt="panobianco Logo"/>
-                </div>
-                <div className="gym">
-                    <h3>Sky Fit</h3>
-                    <img src={skyfitLogo} alt="skyfit Logo"/>
-                </div>
-                <div className="gym">
-                    <h3>Smart Fit</h3>
-                    <img src={smartfitLogo} alt="smartfit Logo" className="smartfitLogo"/> 
-                </div>
-                <div className="gym">
-                    <h3>Outras Opções</h3>
-                    <img src={logo} alt="outras opções Logo" className="otheroptionsLogo"/>
-                </div>
+                <img src={panobiancoLogo} alt="panobianco Logo" className="gymPhoto"/>
+                <img src={skyfitLogo} alt="skyfit Logo" className="gymPhoto"/>
+                <img src={smartfitLogo} alt="smartfit Logo" className="gymPhoto"/>
+                <img src={logo} alt="outras opções Logo" className="gymPhoto"/>
             </div>
         </>
     );

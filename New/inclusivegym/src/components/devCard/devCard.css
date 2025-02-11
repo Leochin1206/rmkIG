@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --darkBlue-color: #043A57;
+    --whaterGreen-color: #84ADAF;
+    --white-color: #fff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", serif;
+}
+
+.cardDev{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 480px;
+    background-color: var(--white-color);
+    border-radius: 8px;
+    padding: 1%;
+    color: var(--whaterGreen-color);
+    box-shadow: 0px 6px 20px #0000001a;
+    margin-bottom: 3%;
+}
+
+.infosDev{
+    display: flex;
+    align-items: center;
+    margin-left: 4%;
+}
+
+.infosDev img{
+    width: 60px;
+    height: auto;
+    border-radius: 100%;
+    margin-right: 3%;
+}
+
+.dataDev{
+    display: flex;
+    flex-direction: column;
+    position: static;
+}
+
+.dataDev h3{
+    font-size: 22px;
+}
+
+.othersInformationsDev{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 4%;
+}
+
+.othersInformationsDev p{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 8px 0 8px 0;
+}
+
+.othersInformationsDev a{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.iconsSocialMedia{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
