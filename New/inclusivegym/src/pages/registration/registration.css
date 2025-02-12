@@ -37,12 +37,18 @@
 }
 
 .infosRegistration a{
-    padding: 11px;
+    padding: 13px;
     border-radius: 5px;
     text-decoration: none;
     color: var(--white-color);
     border: solid 3px var(--white-color);
     margin-top: 10%;
+    transition-duration: 0.3s;
+}
+
+.infosRegistration a:hover{
+    background-color: var(--white-color);
+    color: #84ADAF;
 }
 
 .infosRegistration h1{
@@ -66,4 +72,54 @@
     align-items: center;
     justify-content: center;
     width: 70%;
+}
+
+.inputRegistration form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.inputRegistration h1{
+    color: var(--whaterGreen-color);
+    font-size: 40px;
+    margin-bottom: 1%;
+}
+
+.inputRegistration p{
+    color: #85898a;
+    margin-bottom: 3%;
+}
+
+.inputRegistration input{
+    width: 35%;
+    font-size: 20px;
+    border: none;
+    border: solid 3px var(--whaterGreen-color);
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 1%;
+}
+
+.inputRegistration button{
+    background-color: var(--whaterGreen-color);
+    border: solid 3px var(--whaterGreen-color);
+    border-radius: 8px;
+    font-size: 26px;
+    font-weight: 550;
+    color: var(--white-color);
+    padding: 12px;
+    width: 20%;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    margin-top: 4%;
+}
+
+.inputRegistration button:hover{
+    background-color: var(--white-color);
+    border: solid 3px var(--whaterGreen-color);
+    color: var(--whaterGreen-color);
+    width: 22%;
 }

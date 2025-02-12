@@ -31,9 +31,9 @@ export default function AboutUs() {
                         name="André Dantas"
                         functions="Front-End Developer"
                         description="Responsável pela programação, desenvolvimento e toda parte de códigos do projeto, principalmente."
-                        linkInstagram=""
-                        linkLinkedin=""
-                        linkGitHub=""
+                        linkInstagram="https://www.instagram.com/andre.sdantas/?hl=br"
+                        linkLinkedin="https://www.linkedin.com/in/andre-luis-sousa-dantas/"
+                        linkGitHub="https://github.com/andreluiisdantas"
                     />
 
                     <DevCard
@@ -41,9 +41,9 @@ export default function AboutUs() {
                         name="Julio Monteiro"
                         functions="Front-End Developer"
                         description="Responsável pelas pesquisas para melhoria da acessibilidade do site e incluir a localização na tela de academias parceiras."
-                        linkInstagram=""
-                        linkLinkedin=""
-                        linkGitHub=""
+                        linkInstagram="https://www.instagram.com/juliomonteiiro/?hl=br"
+                        linkLinkedin="https://www.linkedin.com/in/julio-alexsandro-monteiro-da-silva-294b25248/"
+                        linkGitHub="https://github.com/juliomonteiiro"
                     />
 
                     <DevCard
@@ -51,9 +51,9 @@ export default function AboutUs() {
                         name="Leonardo Albergoni Viana"
                         functions="Full-Stack Developer"
                         description="Responsável pela parte de Banco de dados, armazenamento de informações e codificação de Back-End."
-                        linkInstagram=""
-                        linkLinkedin=""
-                        linkGitHub=""
+                        linkInstagram="https://www.instagram.com/lleo_1206/?hl=br"
+                        linkLinkedin="https://www.linkedin.com/in/leonardo-albergoni-viana-55b81929a/"
+                        linkGitHub="https://github.com/Leochin1206"
                     />
 
                     <DevCard
@@ -61,7 +61,7 @@ export default function AboutUs() {
                         name="Mauriccio Pazetti"
                         functions="Designer"
                         description="Responsável por toda parte escrita e teórica do projeto, desenvolvedor do Design do site, criador dos conteúdos no Instagram do Inclusive Gym."
-                        linkInstagram=""
+                        linkInstagram="https://www.instagram.com/paze77_mp/?hl=br"
                         linkLinkedin=""
                         linkGitHub=""
                     />
@@ -71,9 +71,9 @@ export default function AboutUs() {
                         name="Pedro Pereira"
                         functions="Front-End Developer"
                         description="Responsável pelas pesquisas de academias que possuem acessibilidade e fazer a tela de academias parceiras."
-                        linkInstagram=""
-                        linkLinkedin=""
-                        linkGitHub=""
+                        linkInstagram="https://www.instagram.com/mvpedrx/?hl=br"
+                        linkLinkedin="https://www.linkedin.com/in/pedro-henrique-pereira-790288283/"
+                        linkGitHub="https://github.com/pedroohenriquee"
                     />
 
                 </div>
